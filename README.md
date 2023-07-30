@@ -2,6 +2,10 @@
 
 ■ 画面遷移図 Figma:
 https://www.figma.com/file/tXrmXSDfquZQ29ewXxRQ1z/%E7%84%A1%E9%A1%8C?type=design&node-id=0-1&mode=design&t=HdGvAfIzmxwtVfQi-0
+
+■ 画面遷移図 ER図:
+[![Image from Gyazo](https://i.gyazo.com/80eb7ae7cd8f53697a6554cedc4d01fe.png)](https://gyazo.com/80eb7ae7cd8f53697a6554cedc4d01fe)
+
 ## サービス概要
 ---
 現在の生活習慣からあなたの理想とする生活習慣へ改善のサポートを行います。
