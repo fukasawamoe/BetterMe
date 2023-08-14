@@ -1,25 +1,23 @@
-<nav class="bg-light">
-  <div class="container mx-auto flex items-center justify-between py-4">
-    <a class="text-lg font-bold" href="/">BetterMe</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">BetterMe</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse flex items-center" id="navbarSupportedContent">
-      <ul class="flex space-x-4 ml-auto">
-
-        <li>
-          <a class="nav-link" data-confirm="ログアウトします" rel="nofollow" data-method="delete" href="#">ログアウト</a>
-        </li>
-
-        <li>
-          <a class="nav-link" href="#">ユーザー登録</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#">ログイン</a>
-        </li>
-
-      </ul>
+    <div class="absolute top-4 right-4" id="navbarSupportedContent">
+      <div class="grid grid-cols-3 gap-4">
+        <div class="bg-white">
+          <%= link_to 'ログアウト', '#', class: 'nav-link', method: :delete, data: { confirm: 'ログアウトします' } %>
+        </div>
+        <div class="bg-white">
+          <%= link_to 'ユーザー登録', users_new_path, class: 'nav-link' %>
+        </div>
+        <div class="bg-white">
+          <%= link_to 'ログイン', '#', class: 'nav-link' %>
+        </div>
+      </div>
     </div>
   </div>
 </nav>
+
 
