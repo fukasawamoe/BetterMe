@@ -104,7 +104,6 @@ GEM
     mini_mime (1.1.2)
     minitest (5.19.0)
     msgpack (1.7.2)
-    mysql2 (0.5.5)
     net-imap (0.3.7)
       date
       net-protocol
@@ -117,6 +116,7 @@ GEM
     nio4r (2.5.9)
     nokogiri (1.15.3-arm64-darwin)
       racc (~> 1.4)
+    pg (1.5.3)
     puma (5.6.6)
       nio4r (~> 2.0)
     racc (1.7.1)
@@ -161,6 +161,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    sqlite3 (1.6.3-arm64-darwin)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
     tailwindcss-rails (2.0.30-arm64-darwin)
@@ -192,10 +193,11 @@ DEPENDENCIES
   debug
   jbuilder
   jsbundling-rails
-  mysql2 (~> 0.5)
+  pg
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)
   sprockets-rails
+  sqlite3 (~> 1.4)
   stimulus-rails
   tailwindcss-rails (~> 2.0)
   turbo-rails
