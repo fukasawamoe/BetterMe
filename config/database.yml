@@ -50,6 +50,6 @@ test:
 #
 production:
   <<: *default
-  adapter: mysql2
+  adapter: postgresql
+  encoding: unicode
   pool: 5
-  timeout: 5000

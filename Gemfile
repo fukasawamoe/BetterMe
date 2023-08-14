@@ -49,7 +49,7 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 group :production do
   # Use mysql as the database for Active Record
-  gem "mysql2", "~> 0.5"
+  gem 'pg'
 end
 
 group :development, :test do
