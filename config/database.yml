@@ -50,6 +50,6 @@ test:
 #
 production:
   <<: *default
-  database: BetterMe_production
-  username: BetterMe
-  password: <%= ENV["BETTERME_DATABASE_PASSWORD"] %>
+  adapter: mysql2
+  pool: 5
+  timeout: 5000
