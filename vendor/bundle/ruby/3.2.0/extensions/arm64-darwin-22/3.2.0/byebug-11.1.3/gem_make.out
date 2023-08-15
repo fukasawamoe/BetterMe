@@ -1,0 +1,22 @@
+current directory: /Users/fukasawamoe/workspace/RUNTEQ/PF/BetterMe/vendor/bundle/ruby/3.2.0/gems/byebug-11.1.3/ext/byebug
+/Users/fukasawamoe/.rbenv/versions/3.2.0/bin/ruby -I /Users/fukasawamoe/.rbenv/versions/3.2.0/lib/ruby/3.2.0 extconf.rb
+creating Makefile
+
+current directory: /Users/fukasawamoe/workspace/RUNTEQ/PF/BetterMe/vendor/bundle/ruby/3.2.0/gems/byebug-11.1.3/ext/byebug
+make DESTDIR\= sitearchdir\=./.gem.20230815-21610-g0ynfz sitelibdir\=./.gem.20230815-21610-g0ynfz clean
+
+current directory: /Users/fukasawamoe/workspace/RUNTEQ/PF/BetterMe/vendor/bundle/ruby/3.2.0/gems/byebug-11.1.3/ext/byebug
+make DESTDIR\= sitearchdir\=./.gem.20230815-21610-g0ynfz sitelibdir\=./.gem.20230815-21610-g0ynfz
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/fukasawamoe/workspace/RUNTEQ/PF/BetterMe/vendor/bundle/ruby/3.2.0/gems/byebug-11.1.3/ext/byebug
+make DESTDIR\= sitearchdir\=./.gem.20230815-21610-g0ynfz sitelibdir\=./.gem.20230815-21610-g0ynfz install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20230815-21610-g0ynfz/byebug
+
+current directory: /Users/fukasawamoe/workspace/RUNTEQ/PF/BetterMe/vendor/bundle/ruby/3.2.0/gems/byebug-11.1.3/ext/byebug
+make DESTDIR\= sitearchdir\=./.gem.20230815-21610-g0ynfz sitelibdir\=./.gem.20230815-21610-g0ynfz clean

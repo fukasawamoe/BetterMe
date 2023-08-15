@@ -1,0 +1,19 @@
+current directory: /Users/fukasawamoe/workspace/RUNTEQ/PF/BetterMe/vendor/bundle/ruby/3.2.0/gems/debug-1.8.0/ext/debug
+/Users/fukasawamoe/.rbenv/versions/3.2.0/bin/ruby -I /Users/fukasawamoe/.rbenv/versions/3.2.0/lib/ruby/3.2.0 extconf.rb
+creating Makefile
+
+current directory: /Users/fukasawamoe/workspace/RUNTEQ/PF/BetterMe/vendor/bundle/ruby/3.2.0/gems/debug-1.8.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230814-98003-cg0o01 sitelibdir\=./.gem.20230814-98003-cg0o01 clean
+
+current directory: /Users/fukasawamoe/workspace/RUNTEQ/PF/BetterMe/vendor/bundle/ruby/3.2.0/gems/debug-1.8.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230814-98003-cg0o01 sitelibdir\=./.gem.20230814-98003-cg0o01
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.bundle
+
+current directory: /Users/fukasawamoe/workspace/RUNTEQ/PF/BetterMe/vendor/bundle/ruby/3.2.0/gems/debug-1.8.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230814-98003-cg0o01 sitelibdir\=./.gem.20230814-98003-cg0o01 install
+/usr/bin/install -c -m 0755 debug.bundle ./.gem.20230814-98003-cg0o01/debug
+
+current directory: /Users/fukasawamoe/workspace/RUNTEQ/PF/BetterMe/vendor/bundle/ruby/3.2.0/gems/debug-1.8.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230814-98003-cg0o01 sitelibdir\=./.gem.20230814-98003-cg0o01 clean

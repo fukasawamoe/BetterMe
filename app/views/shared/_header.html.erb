@@ -1,19 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-orange-200">
   <div class="container-fluid">
-    <div class="text-lg font-bold text-blue-700">BetterMe</div>
+    <div class="text-lg font-bold text-blue-700"><%= link_to "BetterMe", root_path %>  </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="absolute top-4 right-4" id="navbarSupportedContent">
       <div class="grid grid-cols-3 gap-6">
         <div class="bg-orange-200">
-          <%= link_to 'ログアウト', '#', class: 'nav-link', method: :delete, data: { confirm: 'ログアウトします' } %>
-        </div>
-        <div class="bg-orange-200">
-          <%= link_to 'ユーザー登録', users_new_path, class: 'nav-link' %>
-        </div>
-        <div class="bg-orange-200">
-          <%= link_to 'ログイン', '#', class: 'nav-link' %>
+          <%= link_to 'ログアウト', logout_path, class: 'nav-link', data: { turbo_method: :delete ,turbo_confirm: 'ログアウトします' } %>
         </div>
       </div>
     </div>
