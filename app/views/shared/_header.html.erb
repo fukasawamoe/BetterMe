@@ -1,14 +1,46 @@
-<header class="bg-orange-100">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+<header class="navbar bg-orange-100">
+  <% if logged_in? %>
+    <div class="flex-1">
+      <span class="ml-3 text-4xl text-blue-600 font-extrabold">
+        <%= link_to "BetterMe", "#" %>
+      </span>
+    </div>
+  <% else %>
+    <div class="flex-1">
+      <span class="ml-3 text-4xl text-blue-600 font-extrabold">
+        <%= link_to "BetterMe", root_path %>
+      </span>
+    </div>
+  <% end %>
 
-    <span class="ml-3 text-4xl text-blue-600 font-extrabold">
-      <%= link_to "BetterMe", root_path %>
-    </span>
-
-    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+    <div class="flex-none">
+    <% if logged_in? %>
+      <i class="fa-solid fa-bars"></i>
+        <summary tabindex="0" class="btn btn-ghost m-1" id="header-menu"><i class="fa-solid fa-bars fa-lg"></i></summary>
+          <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 outline-dashed outline-gray-400 text-secondary divide-y divide-dashed divide-gray-400 whitespace-nowrap rounded-box w-60">
+            <li class="hover:text-gray-500"><%= link_to 'スケジュールを作る', "#" %></li>
+            <li class="hover:text-gray-500"><%= link_to 'スケジュールの確認・編集', "#" %></li>
+            <li class="hover:text-gray-500"><%= link_to 'マイページ', "#" %></li>
+            <li class="hover:text-gray-500"><%= button_to 'ログアウト', logout_path, class: 'nav-link', data: { turbo_method: :delete ,turbo_confirm: 'ログアウトします' } %></li>
+          </ul>
+        </details>
+    <% else %>
+      <%= link_to 'ログイン', login_path, class: 'btn btn-square btn-ghost whitespace-nowrap w-24' %>
+    <% end %>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
       <a class="mr-5 hover:text-gray-900">
         <font style="vertical-align: inherit;">
-          <font style="vertical-align: inherit;"><%= link_to 'ログアウト', logout_path, class: 'nav-link', data: { turbo_method: :delete ,turbo_confirm: 'ログアウトします' } %></font>
+          <font style="vertical-align: inherit;"><%= link_to 'ユーザー登録', sign_up_path, class: 'nav-link' %></font>
+        </font>
+      </a>
+      <a class="mr-5 hover:text-gray-900">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;"><%= link_to 'ログイン', login_path, class: 'nav-link' %></font>
+        </font>
+      </a>
+      <a class="mr-5 hover:text-gray-900">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;"><%= link_to 'お問い合わせ', "#", class: 'nav-link' %></font>
         </font>
       </a>
     </nav>
