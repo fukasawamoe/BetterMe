@@ -12,7 +12,11 @@
   </head>
 
   <body>
-    <%= render 'shared/header' %>
+    <% if logged_in? %>
+      <%= render 'shared/header' %>
+    <% else %>
+      <%= render 'shared/before_header' %>
+    <% end %>
     <%= render 'shared/flash_massage' %>
     <main class="container mx-auto mt-28 px-5 flex">
       <%= yield %>
